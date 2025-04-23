@@ -1,0 +1,297 @@
+/* Simple CSS for Beachview Guest House */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #120101; /* Główny kolor tła strony */
+  color: black;  /* Czarny kolor tekstu na całej stronie */
+}
+
+header {
+  background-color: white;        /* Biały background nagłówka */
+  color: black;                   /* Czarny kolor tekstu */
+  padding: 10px;                  /* Odstęp wewnętrzny (dookoła zawartości) */
+  text-align: center;             /* Wyśrodkowanie tekstu */
+  border-radius: 10px;            /* Zaokrąglone rogi */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Cień pod nagłówkiem */
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+nav {
+  display: flex;                         /* Ustawia elementy w elastycznym układzie */
+  justify-content: space-between;        /* Równy odstęp między elementami */
+  align-items: center;                   /* Centruje elementy pionowo */
+  background-color: #eeccb0;             /* Jasny kolor tła nawigacji */
+  padding: 0;                            /* Brak paddingu wokół */
+  font-size: 18px;                       /* Zmniejszenie rozmiaru czcionki */
+  color: black;                          /* Czarny kolor czcionki w nawigacji */
+  transition: background-color 0.3s ease; /* Płynne przejście koloru tła */
+}
+
+nav a {
+  color: black;  /* Czarny kolor czcionki w linkach */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Płynna zmiana koloru i rozmiaru */
+}
+
+nav a:hover {
+  color: #8a2be2;  /* Zmiana koloru na fioletowy po najechaniu */
+  transform: scale(1.1);  /* Powiększenie tekstu */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;  /* Zmiana koloru tła dropdown na czarny */
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  background-color: rgb(254, 254, 254);
+  padding: 50px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 800px;
+  border-radius: 10px; /* Zaokrąglone rogi */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Cień wokół kontenera */
+}
+
+.slideshow {
+  width: 150%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 300px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-info {
+  margin: 20px 0;
+}
+
+.room-info img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja powiększenia zdjęć */
+}
+
+.room-info img:hover {
+  transform: scale(1.05);  /* Powiększenie zdjęcia */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Cień wokół zdjęcia */
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background-color: #8a2be2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;  /* Zaokrąglone rogi przycisku */
+  transition: background-color 0.3s ease; /* Płynne przejście koloru */
+}
+
+.contact-form button:hover {
+  background-color: #6a1db3;  /* Zmiana koloru przycisku na ciemniejszy */
+}
+
+footer {
+  background-color: #eea263;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Cień wokół stopki */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja powiększenia zdjęć w galerii */
+}
+
+.gallery img:hover {
+  transform: scale(1.05);  /* Powiększenie zdjęcia */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Cień wokół zdjęcia */
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+}
+
+.slides .slide {
+  display: none;
+  width: 100%;
+}
+
+/* Pokaż aktywny slajd */
+#slide1:checked ~ .slides .slide1,
+#slide2:checked ~ .slides .slide2,
+#slide3:checked ~ .slides .slide3 {
+  display: block;
+}
+
+/* Stylizacja nawigacji */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navigation label {
+  width: 15px;
+  height: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Zmiana koloru aktywnego przycisku */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+  background-color: #333;
+}
+
+/* Lightbox - pełnoekranowy podgląd */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none; /* Domyślnie ukryte */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pokazuje Lightbox po kliknięciu */
+.lightbox:target {
+  display: flex;
+}
+
+/* Obrazek w Lightbox */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Przycisk zamykania */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  nav {
+      font-size: 16px;  /* Mniejszy rozmiar czcionki w nawigacji na urządzeniach mobilnych */
+  }
+
+  .container {
+      width: 95%;  /* Szerokość kontenera dostosowana do mniejszych ekranów */
+  }
+
+  .room-info img {
+      width: 100%;  /* Zdjęcia w pełnej szerokości na mniejszych ekranach */
+  }
+}
+
+
