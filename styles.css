@@ -1,19 +1,19 @@
-/* Simple CSS for Beachview Guest House */
+
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #120101; /* Główny kolor tła strony */
-  color: black;  /* Czarny kolor tekstu na całej stronie */
+  background-color: #120101; 
+  color: black;  
 }
 
 header {
-  background-color: white;        /* Biały background nagłówka */
-  color: black;                   /* Czarny kolor tekstu */
-  padding: 10px;                  /* Odstęp wewnętrzny (dookoła zawartości) */
-  text-align: center;             /* Wyśrodkowanie tekstu */
-  border-radius: 10px;            /* Zaokrąglone rogi */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Cień pod nagłówkiem */
+  background-color: white;        
+  color: black;                 
+  padding: 10px;                  
+  text-align: center;            
+  border-radius: 10px;            
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
 }
 
 .logo {
@@ -22,25 +22,25 @@ header {
 }
 
 nav {
-  display: flex;                         /* Ustawia elementy w elastycznym układzie */
-  justify-content: space-between;        /* Równy odstęp między elementami */
-  align-items: center;                   /* Centruje elementy pionowo */
-  background-color: #eeccb0;             /* Jasny kolor tła nawigacji */
-  padding: 0;                            /* Brak paddingu wokół */
-  font-size: 18px;                       /* Zmniejszenie rozmiaru czcionki */
-  color: black;                          /* Czarny kolor czcionki w nawigacji */
-  transition: background-color 0.3s ease; /* Płynne przejście koloru tła */
+  display: flex;                       
+  justify-content: space-between;        
+  align-items: center;                   
+  background-color: #eeccb0;             
+  padding: 0;                            
+  font-size: 18px;                       
+  color: black;                          
+  transition: background-color 0.3s ease; 
 }
 
 nav a {
-  color: black;  /* Czarny kolor czcionki w linkach */
+  color: black;  
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease; /* Płynna zmiana koloru i rozmiaru */
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 nav a:hover {
-  color: #8a2be2;  /* Zmiana koloru na fioletowy po najechaniu */
-  transform: scale(1.1);  /* Powiększenie tekstu */
+  color: #8a2be2;  
+  transform: scale(1.1);  
 }
 
 nav ul {
@@ -63,7 +63,7 @@ nav li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;  /* Zmiana koloru tła dropdown na czarny */
+  background-color: black;  
   min-width: 160px;
   z-index: 1;
 }
@@ -92,8 +92,8 @@ nav li {
   margin: 20px auto;
   text-align: center;
   max-width: 800px;
-  border-radius: 10px; /* Zaokrąglone rogi */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Cień wokół kontenera */
+  border-radius: 10px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
 }
 
 .slideshow {
@@ -123,12 +123,12 @@ nav li {
   width: 100%;
   max-width: 400px;
   height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja powiększenia zdjęć */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .room-info img:hover {
-  transform: scale(1.05);  /* Powiększenie zdjęcia */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Cień wokół zdjęcia */
+  transform: scale(1.05);  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  
 }
 
 .contact-form {
@@ -147,12 +147,12 @@ nav li {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;  /* Zaokrąglone rogi przycisku */
-  transition: background-color 0.3s ease; /* Płynne przejście koloru */
+  border-radius: 5px;  
+  transition: background-color 0.3s ease; 
 }
 
 .contact-form button:hover {
-  background-color: #6a1db3;  /* Zmiana koloru przycisku na ciemniejszy */
+  background-color: #6a1db3;  
 }
 
 footer {
@@ -162,7 +162,7 @@ footer {
   padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Cień wokół stopki */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
 }
 
 .gallery {
@@ -176,12 +176,12 @@ footer {
   height: 150px;
   margin: 10px;
   object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja powiększenia zdjęć w galerii */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .gallery img:hover {
-  transform: scale(1.05);  /* Powiększenie zdjęcia */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Cień wokół zdjęcia */
+  transform: scale(1.05);  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  
 }
 
 iframe {
@@ -206,14 +206,14 @@ iframe {
   width: 100%;
 }
 
-/* Pokaż aktywny slajd */
+
 #slide1:checked ~ .slides .slide1,
 #slide2:checked ~ .slides .slide2,
 #slide3:checked ~ .slides .slide3 {
   display: block;
 }
 
-/* Stylizacja nawigacji */
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -230,14 +230,14 @@ iframe {
   cursor: pointer;
 }
 
-/* Zmiana koloru aktywnego przycisku */
+
 #slide1:checked ~ .navigation label[for="slide1"],
 #slide2:checked ~ .navigation label[for="slide2"],
 #slide3:checked ~ .navigation label[for="slide3"] {
   background-color: #333;
 }
 
-/* Lightbox - pełnoekranowy podgląd */
+
 .lightbox {
   position: fixed;
   top: 0;
@@ -250,12 +250,12 @@ iframe {
   align-items: center;
 }
 
-/* Pokazuje Lightbox po kliknięciu */
+
 .lightbox:target {
   display: flex;
 }
 
-/* Obrazek w Lightbox */
+
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
@@ -263,7 +263,7 @@ iframe {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
-/* Przycisk zamykania */
+
 .close {
   position: absolute;
   top: 20px;
@@ -282,15 +282,15 @@ iframe {
 
 @media (max-width: 768px) {
   nav {
-      font-size: 16px;  /* Mniejszy rozmiar czcionki w nawigacji na urządzeniach mobilnych */
+      font-size: 16px;  
   }
 
   .container {
-      width: 95%;  /* Szerokość kontenera dostosowana do mniejszych ekranów */
+      width: 95%;  
   }
 
   .room-info img {
-      width: 100%;  /* Zdjęcia w pełnej szerokości na mniejszych ekranach */
+      width: 100%;  
   }
 }
 
